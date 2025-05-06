@@ -194,3 +194,14 @@ body {
     padding: 1rem;
   }
 }
+
+.sidebar summary {
+  /* hide default markers */
+  list-style: none;
+}
+.sidebar summary::-webkit-details-marker {
+  display: none;
+}
+.sidebar summary::marker {
+  display: none;
+}
