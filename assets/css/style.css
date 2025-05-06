@@ -1,0 +1,64 @@
+/* assets/css/style.css */
+:root {
+  --bg:#f5f7fa; --fg:#333; --accent:#4a90e2;
+  --light:#fff; --muted:#666; --gap:1rem;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;color:var(--fg);background:var(--bg);height:100vh;display:flex;flex-direction:column}
+.hdr{background:var(--accent);color:var(--light);padding:var(--gap);font-size:1.5rem;font-weight:600;text-align:center;flex-shrink:0}
+.layout{flex:1;display:flex;overflow:hidden}
+.sidebar{width:250px;background:var(--light);border-right:1px solid #e0e0e0;overflow-y:auto;padding:var(--gap)}
+.content{flex:1;overflow-y:auto;padding:var(--gap);display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:var(--gap)}
+.sidebar details{margin-bottom:.5rem}
+.sidebar summary{list-style:none;cursor:pointer;padding:.5rem;display:flex;align-items:center;border-radius:4px;transition:background .2s}
+.sidebar summary:hover{background:rgba(74,144,226,0.1)}
+.sidebar summary::marker{display:none}
+.sidebar summary::before{content:"\f0da";font-family:"Font Awesome 6 Free";font-weight:900;margin-right:.5rem;transition:transform .2s}
+.sidebar details[open]>summary::before{transform:rotate(90deg)}
+.sidebar .leaf{padding:.3rem .5rem .3rem 1.5rem;display:block;color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.sidebar .leaf:hover{color:var(--accent)}
+.card{background:var(--light);border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.1);display:flex;flex-direction:column;overflow:hidden;transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card-body{padding:1rem;flex:1;display:flex;flex-direction:column}
+.card-title{font-size:1rem;font-weight:500;color:var(--accent);margin-bottom:.5rem}
+.card-link{margin-top:auto;text-decoration:none;color:var(--light);background:var(--accent);padding:.4rem .8rem;border-radius:4px;text-align:center;transition:background .2s}
+.card-link:hover{background:#357ab8}
+.sidebar details {
+  margin-bottom: .5rem;
+}
+/* level 1 categories */
+.sidebar > details > summary {
+  padding: .5rem .5rem .5rem 1rem;
+}
+/* level 2 sub-categories */
+.sidebar details details > summary {
+  padding: .5rem .5rem .5rem 2rem;
+  font-size: .95rem;
+  color: #555;
+}
+/* level 3 (questions) */
+.sidebar details details .leaf {
+  padding: .3rem .5rem .3rem 3rem;
+  font-size: .9rem;
+}
+/* hide menu btn by default */
+.menu-btn { display: none; background:none;border:none;font-size:1.2rem;color:var(--light); }
+
+/* mobile layout */
+@media (max-width: 768px) {
+  .layout { flex-direction: column; }
+  .sidebar {
+    position: fixed; top: 0; left: -250px;
+    height: 100%; width: 250px;
+    transition: left .3s;
+    z-index: 100;
+  }
+  .sidebar.open { left: 0; }
+  .content {
+    margin-top: 50px; /* header */
+    padding: 1rem;
+  }
+  /* show hamburger */
+  .menu-btn { display: block; position: absolute; left: 1rem; top: .8rem; }
+  .hdr { position: fixed; width: 100%; z-index: 90; }
+}
