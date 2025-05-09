@@ -35,7 +35,7 @@ function showCard(n){
   const c=document.createElement('div'); c.className='card';
   c.innerHTML=`
     <div class="card-body">
-      <div class="card-title">${n.name}</div>
+      <div class="card-title">${n.name}</div><br>
       <a class="card-link" href="${n.link}" target="_blank">View Question</a>
     </div>`;
   ct.prepend(c);
