@@ -1,43 +1,68 @@
 [
   {
-    "name": "Array",
+    "name": "1D Prefix Sum",
     "children": [
-      {
-        "name": "Sliding Window",
-        "children": [
-          {
-            "name": "Minimum Size Subarray Sum",
-            "link": "https://leetcode.com/problems/minimum-size-subarray-sum/"
-          },
-          {
-            "name": "Longest Substring Without Repeating Characters",
-            "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
-          }
-        ]
-      },
-      {
-        "name": "Two Pointers",
-        "children": [
-          {
-            "name": "Container With Most Water",
-            "link": "https://leetcode.com/problems/container-with-most-water/"
-          }
-        ]
-      }
+      { "name": "Running Sum of 1d Array", "link": "https://leetcode.com/problems/running-sum-of-1d-array" },
+      { "name": "Minimum Size Subarray Sum", "link": "https://leetcode.com/problems/minimum-size-subarray-sum/" },
+      { "name": "Longest Subsequence With Limited Sum", "link": "https://leetcode.com/problems/longest-subsequence-with-limited-sum" },
+      { "name": "Sum of All Odd Length Subarrays", "link": "https://leetcode.com/problems/sum-of-all-odd-length-subarrays" },
+      { "name": "Max Consecutive Ones III", "link": "https://leetcode.com/problems/max-consecutive-ones-iii" },
+      { "name": "Meeting Rooms II", "link": "https://leetcode.com/problems/meeting-rooms-ii/" },
+      { "name": "Shifting Letters", "link": "https://leetcode.com/problems/shifting-letters" },
+      { "name": "XOR Queries of a Subarray", "link": "https://leetcode.com/problems/xor-queries-of-a-subarray" },
+      { "name": "Binary Subarrays With Sum", "link": "https://leetcode.com/problems/binary-subarrays-with-sum" }
     ]
   },
   {
-    "name": "Graph",
+    "name": "2D Prefix Sum",
     "children": [
-      {
-        "name": "BFS / DFS",
-        "children": [
-          {
-            "name": "Number of Islands",
-            "link": "https://leetcode.com/problems/number-of-islands/"
-          }
-        ]
-      }
+      { "name": "Range Sum Query 2D - Immutable", "link": "https://leetcode.com/problems/range-sum-query-2d-immutable" },
+      { "name": "Increment Submatrices by One", "link": "https://leetcode.com/problems/increment-submatrices-by-one" }
+    ]
+  },
+  {
+    "name": "Forward / Backward Prefix Sum",
+    "children": [
+      { "name": "Product of Array Except Self", "link": "https://leetcode.com/problems/product-of-array-except-self" },
+      { "name": "Construct Product Matrix", "link": "https://leetcode.com/problems/construct-product-matrix" },
+      { "name": "Find Pivot Index", "link": "https://leetcode.com/problems/find-pivot-index" },
+      { "name": "My Calendar II", "link": "https://leetcode.com/problems/my-calendar-ii/" },
+      { "name": "GCD Queries", "link": "https://www.codechef.com/problems/GCDQ" },
+      { "name": "Make Sum Divisible by P", "link": "https://leetcode.com/problems/make-sum-divisible-by-p" },
+      { "name": "Max Chunks To Make Sorted II", "link": "https://leetcode.com/problems/max-chunks-to-make-sorted-ii" },
+      { "name": "Sum of Absolute Differences in a Sorted Array", "link": "https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array" }
+    ]
+  },
+  {
+    "name": "Range Add & Queries",
+    "children": [
+      { "name": "Points That Intersect With Cars", "link": "https://leetcode.com/problems/points-that-intersect-with-cars" },
+      { "name": "Check If All Integers in a Range Are Covered", "link": "https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered" },
+      { "name": "Maximum Population Year", "link": "https://leetcode.com/problems/maximum-population-year" },
+      { "name": "Range Addition", "link": "https://leetcode.com/problems/range-addition/" },
+      { "name": "Crush (HackerRank)", "link": "https://www.hackerrank.com/challenges/crush/problem" },
+      { "name": "Jump Game VII", "link": "https://leetcode.com/problems/jump-game-vii" },
+      { "name": "Car Pooling", "link": "https://leetcode.com/problems/car-pooling" }
+    ]
+  },
+  {
+    "name": "Palindrome Queries",
+    "children": [
+      { "name": "Palindrome Queries (HackerEarth)", "link": "https://www.hackerearth.com/practice/algorithms/string-algorithm/string-searching/practice-problems/algorithm/palindrome-queries-eefd5c23/" }
+    ]
+  },
+  {
+    "name": "Ants & Robots",
+    "children": [
+      { "name": "Ant on the Boundary", "link": "https://leetcode.com/problems/ant-on-the-boundary/" },
+      { "name": "Movement of Robots", "link": "https://leetcode.com/problems/movement-of-robots" }
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "children": [
+      { "name": "Range Increment Queries", "note": "All items start at 0, queries increase range by M" },
+      { "name": "Alphabet Palindrome Queries", "note": "26-letter string, queries check palindrome from (l, r)" }
     ]
   }
 ]
